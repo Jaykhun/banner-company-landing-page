@@ -1,0 +1,38 @@
+.main-application {
+    margin-top: 130px;
+    @include flex(center, center, column);
+    &__body {
+        margin-left: 50%;
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+        span {
+            top: 0px;
+        }
+    }
+
+    &__txt {
+        @include font($OpenSans, 1.4em);
+        color: $txtColor;
+        line-height: 180%;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        a {
+            padding: 12px 22px;
+            border-radius: 27px;
+            @include font($OpenSans, 1.6em, 700);
+            @include text(#fff, uppercase);
+            background-color: $headerBodyBtn;
+        }
+    }
+
+    &__img {
+        position: relative;
+        top: -309px;
+        left: -206px;
+        z-index: -1;
+    }
+}

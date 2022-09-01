@@ -1,0 +1,92 @@
+.main-faq {
+    margin-top: 130px;
+    margin-bottom: 150px;
+    &__title {
+        margin-bottom: 65px;
+    }
+
+    &__body {
+        @include flex(space-between, center, row, wrap);
+    }
+
+    &__subtitle {
+        @include font($OpenSans, 2em, 600);
+        color: $subtitleColor;
+        margin-bottom: 35px;
+    }
+    &__content {
+        max-width: 50%;
+        margin-bottom: 50px;
+    }
+    &__txt {
+        color: $txtColor;
+        @include font($OpenSans, 1.4em);
+        line-height: 130%;
+    }
+
+    &__bottom {
+        position: relative;
+        z-index: 3;
+        min-height: 220px;
+        margin-top: 20px;
+        background-color: $faqFormBcg;
+        box-shadow: 0px 23px 32px 0px rgba(81, 8, 86, 0.33);
+        border-radius: 10px;
+        padding: 40px;
+    }
+    .faq-form {
+        &__img {
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+        }
+
+        &__content {
+            margin-left: 27%;
+        }
+
+        &__subtitle {
+            @include font($OpenSans, 1.6em, 400, italic);
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            @include font($OpenSans, 2em, 600);
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            input[type="text"] {
+                &::-webkit-input-placeholder {
+                    @include font($OpenSans, 1em, 400, italic);
+                    color: #fff;
+                }
+                width: 35%;
+                padding: 0px 15px;
+                margin-top: 10px;
+                outline: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid #fff;
+                background-color: transparent;
+                @include font($OpenSans, 1.4em, 700);
+                color: #fff;
+                margin-right: 20px;
+            }
+            input[type="button"] {
+                cursor: pointer;
+                width: 200px;
+                background-color: $headerPopupBtn;
+                outline: none;
+                border: none;
+                @include font($OpenSans, 1.6em, 700);
+                color: #fff;
+                height: 50px;
+                border-radius: 25px;
+            }
+        }
+    }
+}

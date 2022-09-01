@@ -1,0 +1,95 @@
+.main-banner {
+    margin-top: -170px;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    background-color: $bannerBcg;
+    &__body {
+        @include flex(space-between);
+    }
+    &__content {
+        max-width: 45%;
+    }
+    &__subtitle {
+        margin-bottom: 65px;
+    }
+
+    &__txt {
+        @include font($OpenSans, 1.4em);
+        color: $txtColor;
+        margin-bottom: 35px;
+        line-height: 160%;
+    }
+
+    &__form {
+        form {
+            position: relative;
+            z-index: 3;
+            width: 65%;
+            @include flex(space-between);
+            input[type="text"] {
+                &::-webkit-input-placeholder {
+                    @include font($OpenSans, 1em, 400, italic);
+                    color: $txtColor;
+                }
+                width: 35%;
+                padding: 0px 15px;
+                outline: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid $borderColor;
+                background-color: transparent;
+                @include font($OpenSans, 1.4em, 700);
+                color: $txtColor;
+                margin-right: 20px;
+            }
+            input[type="button"] {
+                cursor: pointer;
+                width: 200px;
+                background-color: $headerPopupBtn;
+                outline: none;
+                border: none;
+                @include font($OpenSans, 1.6em, 700);
+                color: #fff;
+                height: 50px;
+                border-radius: 25px;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .banner-form {
+        &__subtitle {
+            @include font($OpenSans, 1.6em, 400, italic);
+            color: $txtColor;
+            margin-bottom: 5px;
+        }
+
+        &__title {
+            @include font($OpenSans, 2em, 600);
+            color: $subtitleColor;
+            margin-bottom: 25px;
+        }
+
+        &__planeway {
+            position: absolute;
+            bottom: -42px;
+            right: 0px;
+            z-index: 2;
+        }
+
+        &__plane {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translate(0%, -50%);
+        }
+        &__full-img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.header {
+    &__top {
+        padding-top: 70px;
+        @include flex(space-between, center);
+    }
+
+    &__logo {
+        a {
+            @include font($OpenSans, 1.8em, 800);
+            @include text(#fff, uppercase);
+        }
+    }
+
+    &__menu {
+        @include flex(space-between, center);
+    }
+
+    &__list {
+        margin-left: 50px;
+        a {
+            @include font($OpenSans, 1.3em, 500);
+            @include text(#fff, uppercase);
+        }
+    }
+    &__phone {
+        margin: auto 33px auto 66px;
+        a {
+            @include font($OpenSans, 1.6em, 700);
+            color: #fff;
+        }
+    }
+    &__order {
+        a {
+            @include font($OpenSans, 1.1em, 800);
+            @include text(#fff, uppercase);
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 6px 12px;
+        }
+    }
+}

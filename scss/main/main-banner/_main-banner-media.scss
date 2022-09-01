@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1100px) {
+    .main-banner {
+        &__subtitle {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-banner {
+        padding-top: 130px;
+        padding-bottom: 100px;
+        &__body {
+            flex-direction: column;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__img {
+            max-width: 50%;
+            margin-left: 50%;
+        }
+        &__form {
+            position: relative;
+            max-width: 50%;
+            margin-top: -32%;
+
+            form {
+                @include flex(flex-start, stretch, column);
+                input[type="text"] {
+                    width: 100%;
+                    margin-bottom: 35px;
+                    padding: 7px 15px;
+                }
+                input[type="button"] {
+                    width: 100%;
+                }
+            }
+        }
+        .banner-form {
+            &__planeway {
+                display: none;
+            }
+
+            &__plane {
+                display: none;
+            }
+            &__full-img {
+                position: absolute;
+                top: -10%;
+                right: 0%;
+                transform: translate(0%, -10%);
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main-banner {
+        .banner-form {
+            &__full-img {
+                top: 6%;
+                transform: translate(0%, -10%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-banner {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        &__subtitle {
+            font-size: 2.4em;
+        }
+        &__img {
+            max-width: 100%;
+            margin-left: 0%;
+            margin-bottom: 60px;
+        }
+        &__form {
+            position: relative;
+            max-width: 100%;
+            margin-top: 0%;
+
+            form {
+                input[type="text"] {
+                    width: 155%;
+                }
+
+                input[type="button"] {
+                    width: 155%;
+                }
+            }
+        }
+        .banner-form {
+            &__full-img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-banner {
+        &__subtitle {
+            font-size: 2.4em;
+        }
+    }
+}

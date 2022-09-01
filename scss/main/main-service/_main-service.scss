@@ -1,0 +1,129 @@
+.main {
+    &__service {
+        padding-bottom: 120px;
+        background-color: $serviceBcg;
+    }
+
+    &__service-body {
+        @include flex(space-between, center);
+    }
+
+    &__service-content {
+        max-width: 50%;
+    }
+
+    &__service-title {
+        padding-top: 100px;
+        margin-bottom: 92px;
+    }
+
+    &__service-subtitle {
+        margin-bottom: 65px;
+    }
+
+    &__service-menu {
+        margin-bottom: 55px;
+    }
+
+    &__service-list {
+        position: relative;
+        left: 10px;
+        line-height: 220%;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $txtColor;
+        }
+        a {
+            @include font($OpenSans, 1.4em);
+            color: $txtColor;
+        }
+    }
+
+    &__service-bottom {
+        width: 100%;
+        @include flex(space-between, center);
+        background-color: $serviceBtnBcg;
+        padding: 36px;
+        border-radius: 10px;
+        box-shadow: 0px 23px 32px 0px rgba(81, 8, 86, 0.33);
+    }
+
+    &__service-bottom-subtitle {
+        @include font($OpenSans, 1.3em, 400, italic);
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    &__service-bottom-title {
+        @include font($OpenSans, 1.6em, 500);
+        color: #fff;
+    }
+
+    &__service-bottom-btn {
+        a {
+            padding: 12px 22px;
+            border-radius: 27px;
+            @include font($OpenSans, 1.6em, 700);
+            @include text(#fff, uppercase);
+            background-color: $headerBodyBtn;
+            margin-left: 20px;
+        }
+    }
+
+    &__service-img {
+        position: relative;
+        max-width: 50%;
+        label {
+            cursor: pointer;
+        }
+    }
+
+    &__service-txt {
+        position: absolute;
+        left: 150px;
+        bottom: -80px;
+        @include font($OpenSans, 1.3em);
+        color: $txtColor;
+    }
+
+    &__service-banner {
+        position: relative;
+        box-shadow: 0px 23px 32px 0px rgba(81, 8, 86, 0.33);
+        transition: all 0.3s ease;
+        z-index: 7;
+        width: 800px;
+    }
+
+    &__service-leftBtn {
+        position: absolute;
+        bottom: -80px;
+    }
+
+    &__service-rightBtn {
+        position: absolute;
+        left: 130px;
+        bottom: -80px;
+    }
+
+    &__service-none {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include font($MullerExtra, 4em);
+        color: $titleColor;
+        z-index: 3;
+    }
+}
+
+#leftarrow:checked ~ img {
+    transform: translateX(-300%);
+}

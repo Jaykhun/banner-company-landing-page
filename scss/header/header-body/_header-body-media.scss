@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1130px) {
+    .header {
+        &__body {
+            margin-top: 30px;
+        }
+
+        &__txt {
+            margin-top: 0px;
+        }
+
+        &__title {
+            h1 {
+                font-size: 5.5em;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 43px;
+            font-size: 2.5em;
+        }
+
+        &__body-btn {
+            margin-top: 40px;
+        }
+
+        &__body-order {
+            width: 70%;
+            border-radius: 27px;
+        }
+
+        &__body-txt {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        &__body {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        &__body {
+            padding-bottom: 40px;
+        }
+        &__title {
+            h1 {
+                font-size: 5em;
+            }
+        }
+        &__subtitle {
+            font-size: 2.1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        &__title {
+            margin-top: -60px;
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+        &__img {
+            height: 500px;
+        }
+        &__txt {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .header {
+        &__body {
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            margin-left: -10px;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+        &__txt {
+            max-width: 100%;
+            margin-top: 70px;
+        }
+        &__body {
+            padding-bottom: 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .header {
+        &__img {
+            height: 425px;
+        }
+        &__txt {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header {
+        &__img {
+            height: 350px;
+        }
+
+        &__title {
+            h1 {
+                font-size: 3.5em;
+            }
+        }
+
+        &__body-order {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .header {
+        &__img {
+            height: 280px;
+        }
+        &__body {
+            margin-top: 0px;
+        }
+    }
+}

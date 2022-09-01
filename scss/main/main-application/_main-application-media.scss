@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1000px) {
+    .main-application {
+        &__body {
+            max-width: 80%;
+            margin-left: 0%;
+        }
+
+        &__txt {
+            margin-bottom: 55px;
+        }
+
+        &__img {
+            position: relative;
+            top: -290px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-application {
+        margin-top: 100px;
+        &__body {
+            max-width: 80%;
+            margin-left: 0%;
+        }
+        &__subtitle {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-application {
+        margin-top: 75px;
+        &__body {
+            max-width: 100%;
+        }
+        &__subtitle {
+            font-size: 2.4em;
+            margin-bottom: 50px;
+            br {
+                display: none;
+            }
+        }
+
+        &__btn {
+            a {
+                padding: 12px 60px;
+            }
+        }
+        &__img {
+            top: -165px;
+        }
+    }
+}

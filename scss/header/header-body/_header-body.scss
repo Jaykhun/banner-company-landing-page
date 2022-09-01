@@ -1,0 +1,53 @@
+.header {
+    &__body {
+        margin-top: 88px;
+        padding-bottom: 40px;
+        @include flex(space-between, center);
+    }
+
+    &__img {
+        height: 631px;
+        margin-left: -90px;
+        img {
+            height: 100%;
+        }
+    }
+    &__txt {
+        max-width: 40%;
+    }
+    &__title {
+        margin-top: -100px;
+        h1 {
+            @include font($MullerExtra, 6em);
+            @include text(#fff, uppercase);
+        }
+    }
+
+    &__subtitle {
+        margin-top: 60px;
+        @include font($MullerMeduim, 3.2em);
+        color: #fff;
+    }
+
+    &__body-btn {
+        margin-top: 75px;
+        @include flex(space-between, center, row, wrap);
+    }
+
+    &__body-order {
+        margin-right: 25px;
+        text-align: left;
+        a {
+            padding: 12px 22px;
+            border-radius: 27px;
+            @include font($OpenSans, 1.5em, 700);
+            @include text(#fff, uppercase);
+            background-color: $headerBodyBtn;
+        }
+    }
+
+    &__body-txt {
+        @include font($OpenSans, 1.6em);
+        color: #fff;
+    }
+}

@@ -1,0 +1,48 @@
+.title {
+    @include font($MullerBold, 3em);
+    color: $titleColor;
+}
+.subtitle {
+    position: relative;
+    @include font($MullerMeduim, 3.2em);
+    color: $subtitleColor;
+    z-index: 3;
+}
+
+.big-number {
+    position: absolute;
+    top: 25px;
+    left: -45px;
+    z-index: -1;
+    @include font($MullerHeavy, 2.3em);
+    color: $bigNumber;
+    text-shadow: 0px 0px 21px rgba(81, 8, 86, 0.1);
+    -moz-transform: matrix(2.78514580053583, 0, 0, 2.78514580053583, 0, 0);
+    -webkit-transform: matrix(2.78514580053583, 0, 0, 2.78514580053583, 0, 0);
+    -ms-transform: matrix(2.78514580053583, 0, 0, 2.78514580053583, 0, 0);
+}
+
+.btn-block {
+    display: none;
+}
+.content-btn {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .big-number {
+        top: 3px;
+        left: 42px;
+        font-size: 2em;
+    }
+
+    .btn-block {
+        display: block;
+        position: relative;
+        bottom: -100px;
+    }
+
+    .content-btn {
+        display: none;
+    }
+}

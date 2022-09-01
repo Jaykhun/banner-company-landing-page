@@ -1,0 +1,48 @@
+@import "font";
+@import "variables";
+@import "reset";
+@import "mixin";
+@import "ui";
+@import "../header/header-top/header-top";
+@import "../header/header-popup/header-popup";
+@import "../header/header-body/header-body";
+@import "../main/main-about/main-about";
+@import "../main/main-service/main-service";
+@import "../main/main-application/main-application";
+@import "../main/main-banner/main-banner";
+@import "../main/main-feedback/main-feedback";
+@import "../main/main-faq/main-faq";
+@import "../footer/footer";
+@import "../header/header-top/header-top-media";
+@import "../header/header-popup/header-popup-media";
+@import "../header/header-body/header-body-media";
+@import "../main/main-about/main-about-media";
+@import "../main/main-service/main-service-media";
+@import "../main/main-application/main-application-media";
+@import "../main/main-banner/main-banner-media";
+@import "../main/main-feedback/main-feedback-media";
+@import "../main/main-faq/main-faq-media";
+@import "../footer/footer-media";
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: -webkit-linear-gradient($headerBcg);
+}
+
+.main__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 30px;
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 0px 15px;
+    }
+}

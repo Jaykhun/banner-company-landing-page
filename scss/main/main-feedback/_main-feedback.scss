@@ -1,0 +1,50 @@
+.main-feedback {
+    margin-top: 130px;
+    &__title {
+        margin-bottom: 120px;
+    }
+    .feedback-slider {
+        &__body {
+            @include flex(center, stretch);
+        }
+        &__logo {
+            width: 140px;
+            height: 140px;
+            margin-right: 35px;
+            img {
+                height: 100%;
+            }
+        }
+        &__txt {
+            @include font($OpenSans, 1.4em);
+            color: $txtColor;
+            line-height: 150%;
+            max-width: 650px;
+        }
+        &__name {
+            margin-top: 18px;
+            @include font($OpenSans, 1.6em, 600);
+            color: $subtitleColor;
+        }
+        &__link {
+            margin-top: 14px;
+            @include font($OpenSans, 1.4em, 600);
+            a {
+                display: block;
+                color: $sliderLink;
+            }
+        }
+        &__arrow {
+            margin-top: 90px;
+            @include flex(flex-start, center);
+        }
+        &__left-arrow {
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        &__right-arrow {
+            cursor: pointer;
+        }
+    }
+}

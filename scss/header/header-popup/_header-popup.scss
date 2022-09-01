@@ -1,0 +1,94 @@
+.header {
+    &__popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #0008;
+        top: -100%;
+        left: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 18;
+
+        &:target {
+            opacity: 1;
+            visibility: visible;
+            top: 0%;
+        }
+    }
+
+    &__popup-body {
+        min-height: 100%;
+        @include flex(center, center);
+        padding: 30px 10px;
+    }
+
+    &__popup-content {
+        position: relative;
+        width: 360px;
+        border-radius: 10px;
+        min-height: 370px;
+        background-image: -webkit-linear-gradient($headerPopupBcg);
+        padding: 45px 65px;
+        box-shadow: $headerPopupBoxShadow;
+    }
+
+    &__popup-close {
+        position: absolute;
+        top: 13px;
+        right: 16px;
+    }
+
+    &__popup-subtitle {
+        @include font($OpenSans, 1.6em, 400, italic);
+        color: #fff;
+    }
+
+    &__popup-title {
+        @include font($OpenSans, 2em, 500);
+        color: #fff;
+    }
+
+    &__popup-form {
+        @include flex(center, center, column);
+        margin-top: 50px;
+        input[type="text"] {
+            &::-webkit-input-placeholder {
+                @include font($OpenSans, 1em, 400, italic);
+                color: #fff;
+            }
+            width: 100%;
+            padding: 10px 15px;
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+            @include font($OpenSans, 1.4em, 700);
+            color: #fff;
+        }
+    }
+
+    &__popup-text {
+        margin-bottom: 40px;
+    }
+
+    &__popup-phone {
+        margin-bottom: 33px;
+    }
+    &__popup-btn {
+        cursor: pointer;
+        width: 100%;
+        background-color: $headerPopupBtn;
+        outline: none;
+        border: none;
+        @include font($OpenSans, 1.6em, 700);
+        color: #fff;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
